@@ -1,0 +1,68 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+
+body {
+    background-image: url(/images/backgroundwaldo.jpg);
+    background-size: cover;
+}
+
+article {
+    padding:2%;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+@keyframes moveBg {
+    0% {
+        background-position: -20px -20px;
+    }
+
+    20% {
+        background-position: -20px -800px;
+    }
+
+    40% {
+        background-position: -1200px -800px;
+    }
+
+    60% {
+        background-position: -1200px -20px;
+    }   
+
+
+}
+
+/* kalder animationen via class og tilføjes via klik */
+.moveIt {
+    animation-name: moveBg;
+    animation-duration: 20s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+/* Den scene vi kigger ignennem */
+#zoom {
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 450px;
+    border: 5px solid #000;
+    background-image: url(/images/waldo2.jpg);
+
+    /*
+  animation-name: moveBg;
+  animation-duration: 7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  */
+}
+
+}
